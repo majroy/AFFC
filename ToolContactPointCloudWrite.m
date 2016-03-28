@@ -22,7 +22,7 @@ for j=1:m
         end
     end
 end
-[FileName,PathName] = uiputfile('*.csv','Save point cloud as:',pwd);
+[FileName,PathName] = uiputfile('*.asc','Save point cloud as:',pwd);
 dlmwrite(fullfile(PathName, FileName),PointsOutput);
 
 end %function

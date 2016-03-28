@@ -269,8 +269,8 @@ function pushbutton_UpdateCallback(varargin)
     ExecuteOnUpdate;
 end
 
-function RetKP(E) %if return key pressed
-    if strcmp(E.Key,'return')
+function RetKP(varargin) %if return key pressed
+    if strcmp(varargin{2}.Key,'return')
         ExecuteOnUpdate;
     end
 end
